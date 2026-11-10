@@ -1,0 +1,127 @@
+1
+00:00:00,050 --> 00:00:05,088
+This is ACME Control, a monitoring and control platform for water treatment
+
+2
+00:00:05,088 --> 00:00:09,723
+plants, built with Flutter, Supabase, and a TypeScript API on Vercel.
+
+3
+00:00:09,723 --> 00:00:11,742
+Each demo account has a role.
+
+4
+00:00:11,742 --> 00:00:13,713
+Let's sign in as the operator.
+
+5
+00:00:14,426 --> 00:00:18,982
+The process view shows the live plant: two tanks, pumps, valves, levels,
+
+6
+00:00:18,982 --> 00:00:23,791
+pressures and flows, with water moving through the pipes in a 3D diagram you
+
+7
+00:00:23,791 --> 00:00:24,424
+can orbit.
+
+8
+00:00:24,424 --> 00:00:28,438
+Every asset shows its requested state next to its actual state.
+
+9
+00:00:29,138 --> 00:00:31,575
+Commands only work in manual mode.
+
+10
+00:00:31,575 --> 00:00:36,941
+I switch pump P-101 to manual so it keeps running, then switch the inlet valve
+
+11
+00:00:36,941 --> 00:00:38,523
+to manual and close it.
+
+12
+00:00:38,523 --> 00:00:41,804
+The valve travels, and the inflow drops to zero.
+
+13
+00:00:42,506 --> 00:00:46,734
+On the simulation page, I can choose scenarios and advance time.
+
+14
+00:00:46,734 --> 00:00:48,609
+Let's jump four hours ahead.
+
+15
+00:00:49,322 --> 00:00:52,793
+Back on the process view, the raw water tank is empty.
+
+16
+00:00:52,793 --> 00:00:57,136
+The pump is still requested to run, but the interlock keeps it stopped, and
+
+17
+00:00:57,136 --> 00:00:58,178
+alarms are raised.
+
+18
+00:00:58,874 --> 00:01:02,417
+Alarms are prioritised, and operators acknowledge them.
+
+19
+00:01:02,417 --> 00:01:06,227
+Trends show the history of levels, flows and pressures.
+
+20
+00:01:06,938 --> 00:01:11,419
+Engineers propose setpoint changes, and a supervisor reviews them.
+
+21
+00:01:11,419 --> 00:01:15,997
+Here, the supervisor approves a pending proposal, and the new value takes
+
+22
+00:01:15,997 --> 00:01:17,188
+effect immediately.
+
+23
+00:01:17,882 --> 00:01:20,981
+Maintenance work orders support lockout and tagout.
+
+24
+00:01:20,981 --> 00:01:26,822
+At Harbor Point, pump P-102 is locked out for a seal replacement, so it cannot
+
+25
+00:01:26,822 --> 00:01:27,122
+run.
+
+26
+00:01:27,122 --> 00:01:30,079
+There are also shift handovers and a plants overview.
+
+27
+00:01:30,794 --> 00:01:36,777
+On phones, the diagram becomes vertical, with tabs for plant, alarms, assets
+
+28
+00:01:36,777 --> 00:01:37,486
+and more.
+
+29
+00:01:37,486 --> 00:01:42,388
+If the connection drops, the app keeps showing the last data, read-only, and
+
+30
+00:01:42,388 --> 00:01:44,001
+disables control actions.
+
+31
+00:01:44,714 --> 00:01:48,594
+Everything is stored in Supabase and shared between web and mobile.
+
+32
+00:01:48,594 --> 00:01:50,637
+That's ACME Control.
