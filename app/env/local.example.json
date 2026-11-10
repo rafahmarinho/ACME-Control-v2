@@ -1,0 +1,7 @@
+{
+  "SUPABASE_URL": "http://127.0.0.1:54321",
+  "SUPABASE_ANON_KEY": "paste the 'Publishable key' printed by `supabase start`",
+  "API_BASE_URL": "http://localhost:3001",
+  "WEB_APP_URL": "http://localhost:8080",
+  "DEMO_PASSWORD": "AcmeDemo!2026"
+}

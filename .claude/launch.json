@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "api",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["--dir", "api", "start"],
+      "port": 3001
+    },
+    {
+      "name": "web",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["app/scripts/serve-web.mjs", "8080"],
+      "port": 8080
+    }
+  ]
+}

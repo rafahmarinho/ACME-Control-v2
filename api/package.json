@@ -1,0 +1,30 @@
+{
+  "name": "acme-control-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ACME Control — command & simulation API (Vercel Functions)",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx watch src/dev-server.ts",
+    "start": "tsx src/dev-server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "seed:users": "tsx scripts/seed-users.ts",
+    "reset:demo": "tsx scripts/reset-demo.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.16",
+    "@types/node": "^26.6.6",
+    "dotenv": "^18.0.10",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}
